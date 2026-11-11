@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopt a Pet</title>
+    <style>
+    </style>
+</head>
+<body>
+    <form id="form" onsubmit="return display()" method="post">
+        <h1>Adopt a Pet</h1>
+        <p>
+            <label for="Lname">Last Name:</label>
+            <input type="text" required id="Lname" name="Last Name">
+        </p>
+        <p>
+            <label for="Fname">First Name:</label>
+            <input type="text" required id="Fname" name="First Name">
+        </p>
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" required id="email" name="Email">
+        </p>
+        <p>
+            <label for="City">City:</label>
+            <input type="text" required id="City" name="City">
+        </p>
+        <p>
+            <label for="tel">tel:</label>
+            <input type="tel" required id="tel" name="tel">
+        </p>
+        <div>
+            <p>Choose your pet type</p>
+            <input type="radio" id="pet1" name="petSelection" value ="dog" checked>
+            <label for="pet1">Dog / puppy</label>
+            <br>
+            <input type="radio" id="pet2" name="petSelection" value ="cat">
+            <label for="pet2">Cat / kitten</label>
+            <br>
+            <input type="radio" id="pet3" name="petSelection" value ="bird">
+            <label for="pet3">Bird</label>
+        </div>
+        <p><input type="submit" id="submit" value="submit"></p>
+    </form>
+    <div id="result"></div>
+    <script src="lab01.js"></script>
+    
+</body>
+</html>
